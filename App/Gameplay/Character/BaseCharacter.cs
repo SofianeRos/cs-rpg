@@ -1,6 +1,6 @@
-namespace ConsoleRPG.App.Gameplay.PlayableCharacter;
+namespace ConsoleRPG.App.Gameplay.Character;
 
-public abstract class Character
+public abstract class BaseCharacter
 {
     protected string _name;
     public string _Name
@@ -25,18 +25,24 @@ public abstract class Character
     protected int _stamina;
     public int Stamina => _stamina;
     
-    public Character(string name)
+    public BaseCharacter(string name)
     {
         _name = name;
     }
 
-    public void Attack(Character target)
+    public void Attack(BaseCharacter target)
     {
         
     }
 
-    public void Defend()
+    public void Block()
     {
         
     }
+    
+    public void Dodge()
+    {
+        
+    }
+    
 }
