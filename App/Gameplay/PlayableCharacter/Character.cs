@@ -2,16 +2,41 @@ namespace ConsoleRPG.App.Gameplay.PlayableCharacter;
 
 public abstract class Character
 {
-    protected string name;
-    protected int agility;
-    protected int armor;
-    protected int hp;
-    protected int speed;
-    protected int strength;
-    protected int stamina;
+    protected string _name;
+    public string _Name
+    {
+        get => _name;
+    }
+    protected int _agility;
+    public int Agility => _agility;
+    
+    protected int _armor;
+   public int Armor => _armor;
+    
+    protected int _hp;
+    public int Hp => _hp;
+    
+    protected int _speed;
+    public int Speed => _speed;
+    
+    protected int _strength;
+    public int Strength => _strength;
+    
+    protected int _stamina;
+    public int Stamina => _stamina;
     
     public Character(string name)
     {
-        this.name = name;
+        _name = name;
+    }
+
+    public void Attack(Character target)
+    {
+        
+    }
+
+    public void Defend()
+    {
+        
     }
 }
