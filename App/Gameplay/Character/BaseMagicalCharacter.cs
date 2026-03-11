@@ -6,7 +6,7 @@ public abstract class BaseMagicalCharacter (string name) : BaseCharacter(name)
     protected int _mana;
     public int Mana => _mana;
     
-    //TODO: Spells
+   
     
     public void Levitate()
     {
