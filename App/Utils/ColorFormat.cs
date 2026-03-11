@@ -93,5 +93,5 @@ public enum Color256
 public enum ColorType
 {
     Background = 48,
-    Foreground = 38,
+    Foreground = 37,
 }
