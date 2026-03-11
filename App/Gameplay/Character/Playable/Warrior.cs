@@ -1,4 +1,4 @@
-namespace ConsoleRPG.App.Gameplay.Character.PlayableCharacter;
+namespace ConsoleRPG.App.Gameplay.Character.Playable;
 
 public class Warrior(string name) : BaseCharacter(name)
 {
