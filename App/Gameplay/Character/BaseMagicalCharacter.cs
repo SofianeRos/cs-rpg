@@ -8,8 +8,18 @@ public abstract class BaseMagicalCharacter(string name) : BaseCharacter(name)
     protected int _mana;
     public int Mana => _mana;
     
-    protected List<Spell> _spells;
+    private List<Spell> _spells = [];
     public List<Spell> Spells => _spells;
+
+    public void Setup(int agility, int armor, int hp, int speed, int strength, int stamina, int mana)
+    {
+        base.Setup(agility, armor, hp, speed, strength, stamina);
+        _mana = mana;
+        
+        // TODO: Un vrai truc pour les sorts
+        Spell fireBall = new ("FireBall", 20, 20);
+        Spells.Add(fireBall);
+    }
 
     public void Levitate()
     {
